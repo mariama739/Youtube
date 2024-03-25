@@ -1,0 +1,227 @@
+*, *::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    font-family: roboto ,sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1.2rem;
+    position: fixed;
+    background-color: white;
+      
+}
+.logo{
+    height: 35px;
+    margin-left: 1.5rem;
+}
+form{
+    display: flex;
+    flex-grow: 1;
+    margin: 0 4rem 0 10rem;
+    
+}
+input[type="search"]{
+    border: none;
+    outline: none;
+    
+}
+.icone-droite, .icon, .icon-m{
+    display: flex;  
+    position: relative;
+    left: 15%;
+    gap: 30PX;
+}
+
+.iconeG{
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    padding: 10PX;
+    width: 100VH;
+    display: flex;
+   justify-content: space-between;
+}
+.icons-menu-haut{
+    display: flex;
+}
+.icon1{
+    padding: 5px;
+    color: black;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #e6e2e2;
+    padding-left: 10px;
+    padding-top: 10PX;
+    font-size: 18px;
+}
+.icon{
+    color: black;
+    font-size: 20PX;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.icon-m{
+    color: rgb(165, 8, 165);
+    font-size: 20PX;
+    background-color: pink;
+    width: 40PX;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10PX;
+    padding-left: 12PX; 
+    text-decoration: none; 
+}
+   /* .section-principal */
+.entete{
+    display: flex;
+    gap: 40PX;
+    padding: 10px;
+    position: relative;
+    left: 15%;
+}
+p{
+    background-color: #e7e3e3;
+    width: 10%;
+    text-align: center;
+    padding-top: 15PX;
+    border-radius: 10px;  
+}
+.menu-gauche{   
+    position: fixed;
+    top: 15%;   
+    height: 80%;
+    width:  18%;
+    overflow: auto; 
+} 
+.menu-droite{
+    flex: 1;
+    padding: 1rem;
+    background-color: white;
+}
+.menu-gauche ul{
+    list-style: none;
+    padding: 0;
+}
+li a{
+    text-decoration: none;
+    color: #444;
+}
+.list-text{
+    margin-left: 1.2rem;
+}
+.list:hover, li.active{
+    background: #ccc;
+}
+.list{
+    padding: 0.6rem 1.1rem;
+}
+ul h4{
+    padding: 0.5rem 1.5rem;
+    color: #444;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(253px, 1fr));
+    gap: 2rem 2rem ;
+    margin-left: 20%;
+} 
+.video ,video{
+    width: 300px;
+    height: 300PX;
+    margin-top: 20%;     
+}
+ 
+.couverture-video{   
+    object-fit: cover;
+}
+
+.section-bas-video{
+    display: flex;
+    margin-top: 0.5rem;
+    
+}
+.detail-video{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+   
+}
+.icon-de-la-chaine{
+    border-radius: 50%;
+}
+.titre{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #181818;
+}
+.Nom{
+    text-decoration: none;
+    color: #8a8787;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.meta-donnés{
+    color: #8a8787;
+    font-size: 0.9rem;
+    font-weight: 300;
+} 
+@media screen and (max-width:700px){
+    body{
+        width: 100%;  
+    }
+    .header{
+        position: static;
+        display: grid;
+        padding: 10PX;
+        width: 100%;
+    }
+    .menu-gauche{   
+          display: none;
+    }
+    .videos{
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(253px, 1fr)); */
+        margin-top: -50%;
+        margin-left: 10px;
+    } 
+    .video ,video{
+        width: 500px;
+        height: 350PX;
+        padding-top: 10%;
+    }
+    .iconeG{
+        width: 30VH;
+        justify-content: space-around;
+    }
+    form{    
+        margin: 0 0 0 0; 
+        margin-top: 50PX;
+        width: 100%;
+    }
+    .entete{
+        gap: 20PX;
+        padding: 10PX;
+        left: 0;
+        overflow: auto;
+    }
+    .menu-droite{
+        overflow-x: auto;
+        width: 100%;
+    }
+    .icone-droite{
+        margin-top: -45PX;
+        margin-left: -30%;
+    }
+    p{
+        background-color: #e7e3e3;
+        width: auto;
+        text-align: center;
+        padding-top: 15PX;
+        border-radius: 10px;  
+    }
+}
